@@ -1,0 +1,19 @@
+----BOOTSTRAP----
+$ sudo apt-get update && sudo apt-get install -y tree
+$ tree --version
+
+$ git config --global user.name "Mohammed"
+$ git config --global user.email "mohammed@email.com"
+$ git config --global init.defaultBranch main
+
+$ git clone https://github.com/m7md-3lm/remotenov24.git
+$ cd remotenov24
+$ git remote add sshorigin git@github.com:m7md-3lm/remotenov24.git
+
+$ ssh-keygen -t rsa -q -N '' -f ~/.ssh/id_rsa
+$ cat ~/.ssh/id_rsa.pub
+
+[Add the public key to your Github account]
+
+$ ssh -T git@github.com
+----BOOTSTRAP----
