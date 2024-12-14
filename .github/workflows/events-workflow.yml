@@ -1,3 +1,5 @@
+run-name: checking workflow reuse - DEMO
+
 on:
   push:
     branches:
@@ -10,6 +12,9 @@ on:
       - main
 
 jobs:
+  reuse_job:
+    uses: ./.github/workflows/reuseme.yml
+
   main_job:
     runs-on: ubuntu-latest
     steps:
